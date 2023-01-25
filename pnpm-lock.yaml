@@ -2,12 +2,14 @@ lockfileVersion: 5.4
 
 specifiers:
   '@astrojs/tailwind': ^3.0.0
+  '@fontsource/jetbrains-mono': ^4.5.12
   astro: ^2.0.1
   astro-icon: ^0.8.0
   tailwindcss: ^3.0.24
 
 dependencies:
   '@astrojs/tailwind': 3.0.0_bgk6wvini4j5nfa7w2itosrqne
+  '@fontsource/jetbrains-mono': 4.5.12
   astro: 2.0.1
   astro-icon: 0.8.0
   tailwindcss: 3.2.4
@@ -559,6 +561,10 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@fontsource/jetbrains-mono/4.5.12:
+    resolution: {integrity: sha512-LJF1ala1/u+wXZmESFqIk08FA9yGX4/uAAleCHmXUMgEjvNAYFHUQQ7eK5hQQoBOwh99cU5suTrqYqEkgzwzPA==}
+    dev: false
 
   /@jridgewell/gen-mapping/0.1.1:
     resolution: {integrity: sha512-sQXCasFk+U8lWYEe66WxRDOE9PjVz4vSM51fTu3Hw+ClTpUSQb718772vH3pyS5pShp6lvQM7SxgIDXXXmOX7w==}
