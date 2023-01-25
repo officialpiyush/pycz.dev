@@ -3,10 +3,17 @@ import { Icon } from "astro-icon";
 ---
 
 <div class="py-4 border-b-2 border-zinc-700">
-  <div class="max-w-6xl mx-auto flex justify-between items-center">
-    <div class="flex gap-2 items-center">
-        <Icon class="h-8 w-8" name="pixelarticons:downasaur" />
-        Piyush
+  <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+    <div class="flex gap-2 items-center uppercase">
+      <Icon class="h-8 w-8" name="pixelarticons:downasaur" />
+      <span class="font-black text-xl">Piyush</span>
+    </div>
+
+    <div>
+        <button class="flex items-center justify-center gap-2 px-8 py-1 border-2 border-zinc-600 rounded hover:bg-zinc-800">
+            <Icon class="h-8 w-8" name="ri:github-fill" />
+            <span class="hidden lg:inline-block">Github</span>
+        </button>
     </div>
   </div>
 </div>
