@@ -10,6 +10,16 @@
             "source": "/github",
             "destination": "https://github.com/officialpiyush",
             "statusCode": 302
+        },
+        {
+            "source": "/twitter",
+            "destination": "https://twitter.com/PiyushCodez",
+            "statusCode": 302
+        },
+        {
+            "source": "/linkedin",
+            "destination": "https://www.linkedin.com/in/piyushbhangale/",
+            "statusCode": 302
         }
     ]
 }
