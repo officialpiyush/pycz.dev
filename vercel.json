@@ -4,22 +4,22 @@
         {
             "source": "/discord",
             "destination": "https://discord.gg/rXXHGpcs7t",
-            "statusCode": 302
+            "permanent": false
         },
         {
             "source": "/github",
             "destination": "https://github.com/officialpiyush",
-            "statusCode": 302
+            "permanent": false
         },
         {
             "source": "/twitter",
             "destination": "https://twitter.com/PiyushCodez",
-            "statusCode": 302
+            "permanent": false
         },
         {
             "source": "/linkedin",
             "destination": "https://www.linkedin.com/in/piyushbhangale/",
-            "statusCode": 302
+            "permanent": false
         }
     ]
 }
