@@ -20,6 +20,11 @@
             "source": "/linkedin",
             "destination": "https://www.linkedin.com/in/piyushbhangale/",
             "permanent": false
+        },
+        {
+            "source": "/gh/:repo",
+            "destination": "https://github.com/officialpiyush/:repo",
+            "statusCode": 302
         }
     ]
 }
