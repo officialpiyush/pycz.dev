@@ -7,11 +7,6 @@
             "permanent": false
         },
         {
-            "source": "/github",
-            "destination": "https://github.com/officialpiyush",
-            "permanent": false
-        },
-        {
             "source": "/twitter",
             "destination": "https://twitter.com/PiyushCodez",
             "permanent": false
@@ -22,8 +17,8 @@
             "permanent": false
         },
         {
-            "source": "/gh/:repo",
-            "destination": "https://github.com/officialpiyush/:repo",
+            "source": "/(gh|github|git)/(.*)",
+            "destination": "https://github.com/officialpiyush/$2",
             "statusCode": 302
         }
     ]
