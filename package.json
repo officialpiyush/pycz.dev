@@ -25,5 +25,10 @@
   "devDependencies": {
     "@types/node": "^18.15.11",
     "drizzle-kit": "^0.17.1"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "astro-icon@0.8.0": "patches/astro-icon@0.8.0.patch"
+    }
   }
 }
