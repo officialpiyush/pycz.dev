@@ -7,12 +7,12 @@ export const links = mysqlTable(
   "links",
   {
     id: text("id").primaryKey().default(nanoid()),
-    key: text("key"),
+    key: text("key").notNull(),
     parent: text("parent"),
     description: text("description"),
-    url: text("url"),
+    url: text("url").notNull(),
     createdAt: timestamp("created_at", { fsp: 2 }).notNull().defaultNow(),
-    enabled: boolean("enabled").default(true),
+    enabled: boolean("enabled").default(true).notNull(),
   },
   (links) => ({
     keyIndex: uniqueIndex("key_idx").on(links.key),
