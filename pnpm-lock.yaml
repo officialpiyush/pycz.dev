@@ -9,6 +9,7 @@ specifiers:
   '@astrojs/tailwind': ^3.0.0
   '@astrojs/vercel': ^3.2.1
   '@planetscale/database': ^1.6.0
+  '@trpc/server': ^10.18.0
   '@types/node': ^18.15.11
   astro: ^2.1.8
   astro-icon: ^0.8.0
@@ -18,11 +19,13 @@ specifiers:
   mysql2: ^3.2.0
   nanoid: ^4.0.2
   tailwindcss: ^3.0.24
+  zod: ^3.21.4
 
 dependencies:
   '@astrojs/tailwind': 3.0.0_yozhg62rznynnf5dd43cbjnjfa
   '@astrojs/vercel': 3.2.1_astro@2.1.8
   '@planetscale/database': 1.6.0
+  '@trpc/server': 10.18.0
   astro: 2.1.8_@types+node@18.15.11
   astro-icon: 0.8.0_6gprosyiuladhommko7mxr4bwu
   dotenv: 16.0.3
@@ -30,6 +33,7 @@ dependencies:
   mysql2: 3.2.0
   nanoid: 4.0.2
   tailwindcss: 3.2.4
+  zod: 3.21.4
 
 devDependencies:
   '@types/node': 18.15.11
@@ -732,6 +736,10 @@ packages:
       picomatch: 2.3.1
     dev: false
 
+  /@trpc/server/10.18.0:
+    resolution: {integrity: sha512-nVMqdDIF9YLOeC3g6RdAvdCPqkHFjpshSqZGThZ+fyjiWSUXj2ZKCduhJFnY77TjtgODojeaaghmzcnjxb+Onw==}
+    dev: false
+
   /@trysound/sax/0.2.0:
     resolution: {integrity: sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==}
     engines: {node: '>=10.13.0'}
@@ -1040,7 +1048,7 @@ packages:
       vite: 4.2.1_@types+node@18.15.11
       vitefu: 0.2.4_vite@4.2.1
       yargs-parser: 21.1.1
-      zod: 3.20.2
+      zod: 3.21.4
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -1541,7 +1549,7 @@ packages:
       glob: 8.1.0
       hanji: 0.0.5
       json-diff: 0.9.0
-      zod: 3.20.2
+      zod: 3.21.4
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -4387,8 +4395,8 @@ packages:
     engines: {node: '>=10'}
     dev: false
 
-  /zod/3.20.2:
-    resolution: {integrity: sha512-1MzNQdAvO+54H+EaK5YpyEy0T+Ejo/7YLHS93G3RnYWh5gaotGHwGeN/ZO687qEDU2y4CdStQYXVHIgrUl5UVQ==}
+  /zod/3.21.4:
+    resolution: {integrity: sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==}
 
   /zwitch/2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
