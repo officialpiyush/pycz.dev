@@ -1,16 +1,11 @@
-import { TRPCError, inferAsyncReturnType } from "@trpc/server";
+import type { inferAsyncReturnType } from "@trpc/server";
 import type { FetchCreateContextFnOptions } from "@trpc/server/adapters/fetch";
 
 export async function createContext({ req }: FetchCreateContextFnOptions) {
-  if (!req.headers.get("x-dashboard-key")) {
-    throw new TRPCError({
-      code: "UNAUTHORIZED",
-      message: "Missing x-dashboard-key header",
-    });
-  }
   const isAuthed =
+    req.headers.has("x-dashboard-key") &&
     process.env.DASHBOARD_KEY ===
-    req.headers.get("x-dashboard-key")?.toString();
+      req.headers.get("x-dashboard-key")?.toString();
 
   return {
     isAuthed,
