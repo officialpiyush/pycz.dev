@@ -12,8 +12,9 @@
   },
   "dependencies": {
     "@astrojs/tailwind": "^3.0.0",
+    "@astrojs/vercel": "^3.2.1",
     "@planetscale/database": "^1.6.0",
-    "astro": "^2.0.1",
+    "astro": "^2.1.8",
     "astro-icon": "^0.8.0",
     "dotenv": "^16.0.3",
     "drizzle-orm": "^0.23.2",
