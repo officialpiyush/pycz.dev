@@ -9,6 +9,7 @@ specifiers:
   '@astrojs/tailwind': ^3.0.0
   '@astrojs/vercel': ^3.2.1
   '@planetscale/database': ^1.6.0
+  '@trpc/client': ^10.18.0
   '@trpc/server': ^10.18.0
   '@types/node': ^18.15.11
   astro: ^2.1.8
@@ -25,6 +26,7 @@ dependencies:
   '@astrojs/tailwind': 3.0.0_yozhg62rznynnf5dd43cbjnjfa
   '@astrojs/vercel': 3.2.1_astro@2.1.8
   '@planetscale/database': 1.6.0
+  '@trpc/client': 10.18.0_@trpc+server@10.18.0
   '@trpc/server': 10.18.0
   astro: 2.1.8_@types+node@18.15.11
   astro-icon: 0.8.0_6gprosyiuladhommko7mxr4bwu
@@ -734,6 +736,14 @@ packages:
     dependencies:
       estree-walker: 2.0.2
       picomatch: 2.3.1
+    dev: false
+
+  /@trpc/client/10.18.0_@trpc+server@10.18.0:
+    resolution: {integrity: sha512-2d+6r2C/xygTjDWX9jT66defgHzbQP0Z8vrvyT3XtPjqU6JNlRNuS2ZtB8xDPdOQUUVnndzZ43BMr+Zu49K0OQ==}
+    peerDependencies:
+      '@trpc/server': 10.18.0
+    dependencies:
+      '@trpc/server': 10.18.0
     dev: false
 
   /@trpc/server/10.18.0:
