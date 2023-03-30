@@ -1,5 +1,5 @@
 ---
-import { Icon } from "astro-icon";
+import AstroIcon, { Icon } from "astro-icon";
 import Layout from "../../layouts/Layout.astro";
 ---
 
@@ -7,6 +7,9 @@ import Layout from "../../layouts/Layout.astro";
   <div
     class="h-full flex flex-col items-center justify-center text-4xl lg:text-6xl font-black gap-5"
   >
+  <div class="-mb-3">
+    <AstroIcon class="h-24 w-24 text-lime-500 text-opacity-40 hover:text-opacity-60" name="pixelarticons:building-skyscraper" />
+  </div>
     <div class="flex items-center justify-center">
       <span class="text-zinc-500">pycz.dev/</span>
       <input
@@ -16,7 +19,7 @@ import Layout from "../../layouts/Layout.astro";
       />
     </div>
     <div class="flex items-center border-2 border-zinc-800 rounded text-2xl lg:text-3xl">
-      <div class="bg-zinc-800  pl-4 pr-2 py-3">
+      <div class="bg-zinc-800 text-zinc-400 pl-4 pr-2 py-3">
         URL:
       </div>
       <input
