@@ -7,6 +7,7 @@ import {
 } from "drizzle-orm/mysql-core/columns";
 import { mysqlTable } from "drizzle-orm/mysql-core/table";
 import { uniqueIndex } from "drizzle-orm/mysql-core/indexes";
+import type { InferModel } from "drizzle-orm";
 
 export const links = mysqlTable(
   "links",
@@ -23,3 +24,5 @@ export const links = mysqlTable(
     keyIndex: uniqueIndex("key_idx").on(links.key),
   })
 );
+
+export type LinksSchema = InferModel<typeof links>;

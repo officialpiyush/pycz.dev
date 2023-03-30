@@ -1,5 +1,5 @@
 import db from "./connection";
-import { links } from "./schema";
+import { links, LinksSchema } from "./schema";
 import { and, eq } from "drizzle-orm/expressions";
 import type { InferModel } from "drizzle-orm";
 
@@ -16,7 +16,7 @@ export async function getLink(key: string) {
   return databaseQueryLinks[0].url;
 }
 
-export type CreateLinkParams = InferModel<typeof links>;
+export type CreateLinkParams = Omit<LinksSchema, "id" | "createdAt">;
 
 export async function createLink(data: CreateLinkParams) {
   try {
