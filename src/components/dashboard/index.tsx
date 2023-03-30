@@ -1,23 +1,41 @@
 import { useEffect, useState } from "preact/hooks";
 import client from "../../utils/server/client";
+import DashboardKey from "./key";
 
 export default function DashboardPage() {
   const [key, setKey] = useState<string>("");
   const [url, setUrl] = useState<string>("");
+  const [isKeySet, setIsKeySet] = useState<boolean>(false);
+
+  const refreshState = () => {
+    console.log("Refreshing state");
+    const authKey = localStorage.getItem("key");
+    if (authKey) {
+      setIsKeySet(true);
+    }
+  };
+
+  useEffect(() => {
+    refreshState();
+  }, []);
 
   const submitForm = async (e: Event) => {
     e.preventDefault();
     if (!key.length || !url.length) return;
 
-    const result = await client.createLink.mutate({
-      key,
-      link: url,
-    });
+    try {
+      const result = await client.createLink.mutate({
+        key,
+        link: url,
+      });
 
-    alert(result);
+      alert(result);
+    } catch (error: any) {
+      alert(error);
+    }
   };
 
-  return (
+  return isKeySet ? (
     <form
       onSubmit={submitForm}
       class="h-full flex flex-col items-center justify-center text-4xl lg:text-6xl font-black gap-5"
@@ -58,5 +76,7 @@ export default function DashboardPage() {
         </button>
       </div>
     </form>
+  ) : (
+    <DashboardKey refreshState={refreshState} />
   );
 }
