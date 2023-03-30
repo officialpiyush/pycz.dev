@@ -1,81 +1,15 @@
 ---
-import AstroIcon, { Icon } from "astro-icon";
 import { z } from "zod";
+import DashboardPage from "../../components/dashboard";
 import Layout from "../../layouts/Layout.astro";
-import { createLink } from "../../utils/db";
 
 const validationSchema = z.object({
   key: z.string().min(1).max(200),
   url: z.string().url(),
   description: z.string().optional(),
 });
-
-if (Astro.request.method === "POST") {
-  const formData = await Astro.request.formData();
-
-  console.log(await Astro.request.json());
-
-  const formDataKey = formData.get("key");
-  const formDataURL = formData.get("url");
-
-  try {
-    validationSchema.parse({ key: formDataKey, url: formDataURL });
-  } catch (error: any) {
-    return new Response(error.message, { status: 400 });
-  }
-
-  const key = formDataKey as string;
-  const url = formDataURL as string;
-
-  const link = await createLink({
-    key,
-    url,
-    description: null,
-    parent: "none",
-    enabled: true,
-  });
-
-  return new Response(JSON.stringify(link), { status: 200 });
-}
 ---
 
 <Layout title="Piyush's Custom Slugs">
-  <form
-  onsubmit="return false"
-    method="post"
-    class="h-full flex flex-col items-center justify-center text-4xl lg:text-6xl font-black gap-5"
-  >
-    <div class="-mb-3">
-      <AstroIcon
-        class="h-24 w-24 text-lime-500 text-opacity-40 hover:text-opacity-60"
-        name="pixelarticons:building-skyscraper"
-      />
-    </div>
-    <div class="flex items-center justify-center">
-      <span class="text-zinc-500">pycz.dev/</span>
-      <input
-        required
-        placeholder="github"
-        class="outline-none w-1/4 underline bg-zinc-900 text-zinc-300 placeholder-zinc-600 text-3xl lg:text-5xl"
-        type="text"
-      />
-    </div>
-    <div
-      class="flex items-center border-2 border-zinc-800 rounded text-2xl lg:text-3xl"
-    >
-      <div class="bg-zinc-800 text-zinc-400 pl-4 pr-2 py-3">URL:</div>
-      <input
-        required
-        placeholder="github.com/officialpiyush"
-        class="pl-2 pr-4 py-2 outline-none underline bg-zinc-900 text-zinc-300 placeholder-zinc-600"
-      />
-    </div>
-
-    <div class="py-2 text-xl">
-      <button
-        class="px-4 py-2 rounded bg-lime-500 bg-opacity-40 hover:bg-opacity-50"
-        type="submit">Create</button
-      >
-    </div>
-  </form>
+  <DashboardPage />
 </Layout>
