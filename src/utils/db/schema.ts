@@ -1,5 +1,10 @@
 import { nanoid } from "nanoid";
-import { boolean, text, timestamp } from "drizzle-orm/mysql-core/columns";
+import {
+  boolean,
+  mysqlEnum,
+  text,
+  timestamp,
+} from "drizzle-orm/mysql-core/columns";
 import { mysqlTable } from "drizzle-orm/mysql-core/table";
 import { uniqueIndex } from "drizzle-orm/mysql-core/indexes";
 
@@ -8,7 +13,7 @@ export const links = mysqlTable(
   {
     id: text("id").primaryKey().default(nanoid()),
     key: text("key").notNull(),
-    parent: text("parent"),
+    parent: mysqlEnum("parent", ["none", "link"]).default("none").notNull(),
     description: text("description"),
     url: text("url").notNull(),
     createdAt: timestamp("created_at", { fsp: 2 }).notNull().defaultNow(),
