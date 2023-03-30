@@ -18,7 +18,7 @@ export const links = mysqlTable(
     parent: mysqlEnum("parent", ["none", "link"]).default("none").notNull(),
     description: text("description"),
     url: text("url").notNull(),
-    createdAt: timestamp("created_at", { fsp: 2 }).notNull().defaultNow(),
+    createdAt: timestamp("created_at").defaultNow(),
     enabled: boolean("enabled").default(true).notNull(),
   },
   (links) => ({
