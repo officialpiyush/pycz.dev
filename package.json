@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@types/node": "^18.15.11",
-    "drizzle-kit": "^0.17.1"
+    "drizzle-kit": "0.17.1-609a4f0"
   },
   "pnpm": {
     "patchedDependencies": {

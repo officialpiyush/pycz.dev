@@ -14,7 +14,7 @@ specifiers:
   '@types/node': ^18.15.11
   astro: ^2.1.8
   astro-icon: ^0.8.0
-  drizzle-kit: ^0.17.1
+  drizzle-kit: 0.17.1-609a4f0
   drizzle-orm: ^0.23.2
   mysql2: ^3.2.0
   nanoid: ^4.0.2
@@ -37,7 +37,7 @@ dependencies:
 
 devDependencies:
   '@types/node': 18.15.11
-  drizzle-kit: 0.17.1
+  drizzle-kit: 0.17.1-609a4f0
 
 packages:
 
@@ -1540,8 +1540,8 @@ packages:
       wordwrap: 1.0.0
     dev: true
 
-  /drizzle-kit/0.17.1:
-    resolution: {integrity: sha512-1+/RSzVMRpAjqQzr+Gi8st3Y3GrRzun/EG9MwASZ/iYOm3erLJgAaM4xTz9RiM/wLYonPI+I5MZRXStSpCfEmg==}
+  /drizzle-kit/0.17.1-609a4f0:
+    resolution: {integrity: sha512-bXflv8YQPe8gE+OSqllxVJEiwzupHjzu6tcBqfO4avrlspiP3shFJfDuHeiv+ztpKcG+8KXAuuFRIplJtD89LA==}
     hasBin: true
     dependencies:
       camelcase: 7.0.1
@@ -1552,6 +1552,7 @@ packages:
       glob: 8.1.0
       hanji: 0.0.5
       json-diff: 0.9.0
+      minimatch: 7.4.3
       zod: 3.21.4
     transitivePeerDependencies:
       - supports-color
@@ -3045,6 +3046,13 @@ packages:
 
   /minimatch/5.1.6:
     resolution: {integrity: sha512-lKwV/1brpG6mBUFHtb7NUmtABCb2WZZmm2wNiOA5hAb8VdCS4B3dtMWyvcoViccwAW/COERjXLt0zP1zXUN26g==}
+    engines: {node: '>=10'}
+    dependencies:
+      brace-expansion: 2.0.1
+    dev: true
+
+  /minimatch/7.4.3:
+    resolution: {integrity: sha512-5UB4yYusDtkRPbRiy1cqZ1IpGNcJCGlEMG17RKzPddpyiPKoCdwohbED8g4QXT0ewCt8LTkQXuljsUfQ3FKM4A==}
     engines: {node: '>=10'}
     dependencies:
       brace-expansion: 2.0.1
