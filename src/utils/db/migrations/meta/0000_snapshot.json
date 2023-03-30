@@ -1,8 +1,8 @@
 {
   "version": "5",
   "dialect": "mysql",
-  "id": "6ff5c227-89e9-4e4e-b45b-c1354144be9a",
-  "prevId": "00000000-0000-0000-0000-000000000000",
+  "id": "04be2a99-bc41-4f94-98c8-ba976823f5e7",
+  "prevId": "6ff5c227-89e9-4e4e-b45b-c1354144be9a",
   "tables": {
     "links": {
       "name": "links",
@@ -16,7 +16,7 @@
         },
         "key": {
           "name": "key",
-          "type": "text",
+          "type": "varchar(200)",
           "primaryKey": false,
           "notNull": true,
           "autoincrement": false

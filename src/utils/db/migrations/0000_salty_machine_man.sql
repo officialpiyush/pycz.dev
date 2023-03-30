@@ -1,0 +1,1 @@
+ALTER TABLE links MODIFY COLUMN `key` varchar(200) NOT NULL;
