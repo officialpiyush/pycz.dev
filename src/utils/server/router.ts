@@ -1,5 +1,6 @@
 import { initTRPC, TRPCError } from "@trpc/server";
 import { z } from "zod";
+import { createLink } from "../db";
 import type { Context } from "./context";
 
 export const t = initTRPC.context<Context>().create();
@@ -29,10 +30,23 @@ export const appRouter = t.router({
         description: z.string().optional(),
       })
     )
-    .mutation(({ input }) => {
-      return {
-        id: "1",
-      };
+    .mutation(async ({ input }) => {
+      const generatedLink = await createLink({
+        key: input.key,
+        url: input.link,
+        description: input.description || null,
+        parent: "none",
+        enabled: true,
+      });
+
+      if (!generatedLink) {
+        throw new TRPCError({
+          code: "INTERNAL_SERVER_ERROR",
+          message: "Failed to create link",
+        });
+      }
+
+      return generatedLink.insertId;
     }),
 });
 
