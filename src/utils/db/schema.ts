@@ -2,6 +2,7 @@ import { nanoid } from "nanoid";
 import {
   boolean,
   mysqlEnum,
+  serial,
   text,
   timestamp,
 } from "drizzle-orm/mysql-core/columns";
@@ -12,7 +13,7 @@ import type { InferModel } from "drizzle-orm";
 export const links = mysqlTable(
   "links",
   {
-    id: text("id").primaryKey().default(nanoid()),
+    id: serial("id").primaryKey(),
     key: text("key").notNull(),
     parent: mysqlEnum("parent", ["none", "link"]).default("none").notNull(),
     description: text("description"),
