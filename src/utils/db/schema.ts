@@ -1,20 +1,20 @@
-import { nanoid } from "nanoid";
+import type { InferModel } from "drizzle-orm";
 import {
   boolean,
   mysqlEnum,
   serial,
   text,
   timestamp,
+  varchar,
 } from "drizzle-orm/mysql-core/columns";
-import { mysqlTable } from "drizzle-orm/mysql-core/table";
 import { uniqueIndex } from "drizzle-orm/mysql-core/indexes";
-import type { InferModel } from "drizzle-orm";
+import { mysqlTable } from "drizzle-orm/mysql-core/table";
 
 export const links = mysqlTable(
   "links",
   {
     id: serial("id").primaryKey(),
-    key: text("key").notNull(),
+    key: varchar("key", { length: 200 }).notNull(),
     parent: mysqlEnum("parent", ["none", "link"]).default("none").notNull(),
     description: text("description"),
     url: text("url").notNull(),
