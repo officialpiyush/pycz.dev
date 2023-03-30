@@ -1,6 +1,7 @@
 import db from "./connection";
 import { links } from "./schema";
 import { and, eq } from "drizzle-orm/expressions";
+import type { InferModel } from "drizzle-orm";
 
 export async function getLink(key: string) {
   const databaseQueryLinks = await db
@@ -13,4 +14,16 @@ export async function getLink(key: string) {
   }
 
   return databaseQueryLinks[0].url;
+}
+
+export type CreateLinkParams = InferModel<typeof links>;
+
+export async function createLink(data: CreateLinkParams) {
+  try {
+    const databaseQueryLinks = await db.insert(links).values(data);
+
+    return databaseQueryLinks;
+  } catch (error) {
+    return null;
+  }
 }
