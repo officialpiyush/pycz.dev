@@ -1,8 +1,8 @@
 {
   "version": "5",
   "dialect": "mysql",
-  "id": "09f6f63f-9de7-4402-bfe9-c6d83d4d1523",
-  "prevId": "00000000-0000-0000-0000-000000000000",
+  "id": "5f5777e3-2c40-48c3-bb0c-7e9da23bffd7",
+  "prevId": "09f6f63f-9de7-4402-bfe9-c6d83d4d1523",
   "tables": {
     "links": {
       "name": "links",
@@ -47,7 +47,7 @@
           "name": "created_at",
           "type": "timestamp",
           "primaryKey": false,
-          "notNull": true,
+          "notNull": false,
           "autoincrement": false,
           "default": "(now())"
         },
