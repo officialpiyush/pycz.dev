@@ -1,16 +1,20 @@
 import { defineConfig } from "astro/config";
 
 import tailwind from "@astrojs/tailwind";
-
-// https://astro.build/config
 import vercel from "@astrojs/vercel/edge";
-
-// https://astro.build/config
 import preact from "@astrojs/preact";
+import Icons from "unplugin-icons/vite";
 
-// https://astro.build/config
 export default defineConfig({
   output: "server",
   integrations: [tailwind(), preact()],
-  adapter: vercel()
+  adapter: vercel(),
+  vite: {
+    plugins: [
+      Icons({
+        compiler: "astro",
+        autoInstall: true,
+      }),
+    ],
+  },
 });
