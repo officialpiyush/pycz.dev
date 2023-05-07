@@ -54,6 +54,9 @@ devDependencies:
   '@iconify-json/ri':
     specifier: ^1.1.8
     version: 1.1.8
+  '@lagon/astro':
+    specifier: ^0.2.3
+    version: 0.2.3
   '@types/node':
     specifier: ^18.15.11
     version: 18.15.11
@@ -753,6 +756,10 @@ packages:
       '@jridgewell/resolve-uri': 3.1.0
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: false
+
+  /@lagon/astro@0.2.3:
+    resolution: {integrity: sha512-HN3Vl2rozhEGKW2nf4Ni9EGBSOHTa1CYmC8k0SpNJS6bNZGyQa2sOAm0FqzVMjv8ai/zF5+2ywSF2acDgYoPEQ==}
+    dev: true
 
   /@ljharb/has-package-exports-patterns@0.0.2:
     resolution: {integrity: sha512-4/RWEeXDO6bocPONheFe6gX/oQdP/bEpv0oL4HqjPP5DCenBSt0mHgahppY49N0CpsaqffdwPq+TlX9CYOq2Dw==}
