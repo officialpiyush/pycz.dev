@@ -1,5 +1,9 @@
 ---
-import { Icon } from "astro-icon";
+import LogosLinkedinIcon from '~icons/logos/linkedin-icon'
+import LogosTwitter from '~icons/logos/twitter'
+import LogosDiscordIcon from '~icons/logos/discord-icon'
+import MdiGithub from '~icons/mdi/github'
+
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -16,10 +20,10 @@ import Layout from "../layouts/Layout.astro";
       <span class="hidden lg:block">Fullstack</span>
     </div>
     <div class="mt-4 flex gap-4">
-      <a href="/linkedin" target="_blank"><Icon class="h-8 w-8" name="logos:linkedin-icon" /></a>
-      <a href="/twitter" target="_blank"><Icon class="h-8 w-8" name="logos:twitter" /></a>
-      <a href="/discord" target="_blank"><Icon class="h-8 w-8" name="logos:discord-icon" /></a>
-      <a href="/github" target="_blank"><Icon class="h-8 w-8" name="mdi:github" /></a>
+      <a href="/linkedin" target="_blank"><LogosLinkedinIcon class="h-8 w-8" name="logos:linkedin-icon" /></a>
+      <a href="/twitter" target="_blank"><LogosTwitter class="h-8 w-8" name="logos:twitter" /></a>
+      <a href="/discord" target="_blank"><LogosDiscordIcon class="h-8 w-8" name="logos:discord-icon" /></a>
+      <a href="/github" target="_blank"><MdiGithub class="h-8 w-8" name="mdi:github" /></a>
     </div>
   </div>
 </Layout>
