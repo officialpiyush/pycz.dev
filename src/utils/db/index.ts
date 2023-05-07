@@ -23,6 +23,7 @@ export async function createLink(data: CreateLinkParams) {
 
     return databaseQueryLinks;
   } catch (error) {
+    console.error(`Failed to create link: ${error}`);
     return null;
   }
 }
