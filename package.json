@@ -27,6 +27,10 @@
     "zod": "^3.21.4"
   },
   "devDependencies": {
+    "@iconify-json/logos": "^1.1.26",
+    "@iconify-json/mdi": "^1.1.50",
+    "@iconify-json/pixelarticons": "^1.1.6",
+    "@iconify-json/ri": "^1.1.8",
     "@types/node": "^18.15.11",
     "drizzle-kit": "0.17.1-609a4f0",
     "unplugin-icons": "^0.16.1"

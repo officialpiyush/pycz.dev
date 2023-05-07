@@ -42,6 +42,18 @@ dependencies:
     version: 3.21.4
 
 devDependencies:
+  '@iconify-json/logos':
+    specifier: ^1.1.26
+    version: 1.1.26
+  '@iconify-json/mdi':
+    specifier: ^1.1.50
+    version: 1.1.50
+  '@iconify-json/pixelarticons':
+    specifier: ^1.1.6
+    version: 1.1.6
+  '@iconify-json/ri':
+    specifier: ^1.1.8
+    version: 1.1.8
   '@types/node':
     specifier: ^18.15.11
     version: 18.15.11
@@ -662,6 +674,30 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@iconify-json/logos@1.1.26:
+    resolution: {integrity: sha512-JK7U5wmGu3wUj1xHYFbGEdMMLV8avzlIgAjqXQhcjmeqf2Qtp/JiBwBXX6qWkcGKkHVly8U2yiT9Ld2w1TCAWQ==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/mdi@1.1.50:
+    resolution: {integrity: sha512-SgbT5w5eHCdOG74ZWPz7HlTGk6VsifIJhNi6lAsxj/5Nlqt6Cz4LlQmSa9eecU9p075Jub2aAx/o7YI+GCahRQ==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/pixelarticons@1.1.6:
+    resolution: {integrity: sha512-lnTyP0K1EbPmaOXo507ulD4W0wvNRrlXNRaU9NKICA8f0hccMfXjnM5V/ss8h4tnzC21R1h8A270mKxbuEe7fw==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/ri@1.1.8:
+    resolution: {integrity: sha512-yykDISjVwFxvuQ/XJhko8gf848DTUlxa/Sa71iVJ5xWgMzCN7gC5cAKs17RNUufZadAiiauK2odX5hlUkR3CNQ==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
 
   /@iconify/types@2.0.0:
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
