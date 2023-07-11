@@ -17,6 +17,11 @@
             "permanent": false
         },
         {
+            "source": "/paypal",
+            "destination": "https://paypal.me/trulypiyush",
+            "permanent": false
+        },
+        {
             "source": "/(gh|github|git)(.*)",
             "destination": "https://github.com/officialpiyush/$2",
             "statusCode": 302
