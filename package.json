@@ -33,7 +33,7 @@
     "@iconify-json/ri": "^1.1.10",
     "@lagon/astro": "^0.2.3",
     "@types/node": "^18.17.1",
-    "drizzle-kit": "0.17.1-609a4f0",
+    "drizzle-kit": "^0.19.11",
     "unplugin-icons": "^0.16.5"
   }
 }
