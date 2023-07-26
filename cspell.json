@@ -1,0 +1,20 @@
+{
+    "version": "0.2",
+    "ignorePaths": [],
+    "dictionaryDefinitions": [],
+    "dictionaries": [],
+    "words": [
+        "astro",
+        "astrojs",
+        "Attributify",
+        "lagon",
+        "officialpiyush",
+        "preact",
+        "pycz",
+        "trpc",
+        "unocss",
+        "unplugin"
+    ],
+    "ignoreWords": [],
+    "import": []
+}
