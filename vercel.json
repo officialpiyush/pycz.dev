@@ -22,6 +22,16 @@
             "permanent": false
         },
         {
+            "source": "/anilist",
+            "destination": "https://anilist.co/user/piyush",
+            "permanent": false
+        },
+        {
+            "source": "/mydramalist",
+            "destination": "https://mydramalist.com/dramalist/im_piyush",
+            "permanent": false
+        },
+        {
             "source": "/(gh|github|git)(.*)",
             "destination": "https://github.com/officialpiyush/$2",
             "statusCode": 302
