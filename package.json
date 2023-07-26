@@ -25,15 +25,10 @@
     "zod": "^3.21.4"
   },
   "devDependencies": {
-    "@iconify-json/logos": "^1.1.33",
-    "@iconify-json/mdi": "^1.1.53",
-    "@iconify-json/pixelarticons": "^1.1.6",
-    "@iconify-json/ri": "^1.1.10",
     "@lagon/astro": "^0.2.3",
     "@types/node": "^18.17.1",
     "@unocss/reset": "^0.53.6",
     "drizzle-kit": "^0.19.11",
-    "unocss": "^0.53.6",
-    "unplugin-icons": "^0.16.5"
+    "unocss": "^0.53.6"
   }
 }
