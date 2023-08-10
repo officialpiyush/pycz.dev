@@ -47,8 +47,8 @@ devDependencies:
     specifier: ^18.17.1
     version: 18.17.1
   '@unocss/reset':
-    specifier: ^0.53.6
-    version: 0.53.6
+    specifier: ^0.55.0
+    version: 0.55.0
   drizzle-kit:
     specifier: ^0.19.11
     version: 0.19.11
@@ -1179,6 +1179,10 @@ packages:
 
   /@unocss/reset@0.53.6:
     resolution: {integrity: sha512-WtZU0Q5Y9CHzitYPJ+ZGPUssVuDnRakmHETQ2EuBJgWZhgsmTECrpb78+tnJdFVowuYYQyV0CP6a07uwkFNm6g==}
+    dev: true
+
+  /@unocss/reset@0.55.0:
+    resolution: {integrity: sha512-TzpcOCIr16IbFxQ4vrSfEV+A8k0N4mJkhl7J3SZfAxBpNDBKAWDB6VBW9iEQY5aBYDLN3wRx1LskgEoubqBCPQ==}
     dev: true
 
   /@unocss/scope@0.53.6:
