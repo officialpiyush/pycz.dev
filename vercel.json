@@ -1,40 +1,40 @@
 {
-    "$schema": "https://openapi.vercel.sh/vercel.json",
-    "redirects": [
-        {
-            "source": "/discord",
-            "destination": "https://discord.gg/rXXHGpcs7t",
-            "permanent": false
-        },
-        {
-            "source": "/twitter",
-            "destination": "https://twitter.com/PiyushCodez",
-            "permanent": false
-        },
-        {
-            "source": "/linkedin",
-            "destination": "https://www.linkedin.com/in/piyushbhangale/",
-            "permanent": false
-        },
-        {
-            "source": "/paypal",
-            "destination": "https://paypal.me/trulypiyush",
-            "permanent": false
-        },
-        {
-            "source": "/anilist",
-            "destination": "https://anilist.co/user/piyush",
-            "permanent": false
-        },
-        {
-            "source": "/mydramalist",
-            "destination": "https://mydramalist.com/dramalist/im_piyush",
-            "permanent": false
-        },
-        {
-            "source": "/(gh|github|git)(.*)",
-            "destination": "https://github.com/officialpiyush/$2",
-            "statusCode": 302
-        }
-    ]
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/discord",
+      "destination": "https://discord.com/users/365644930556755969",
+      "permanent": false
+    },
+    {
+      "source": "/twitter",
+      "destination": "https://twitter.com/PiyushCodez",
+      "permanent": false
+    },
+    {
+      "source": "/linkedin",
+      "destination": "https://www.linkedin.com/in/piyushbhangale/",
+      "permanent": false
+    },
+    {
+      "source": "/paypal",
+      "destination": "https://paypal.me/trulypiyush",
+      "permanent": false
+    },
+    {
+      "source": "/anilist",
+      "destination": "https://anilist.co/user/piyush",
+      "permanent": false
+    },
+    {
+      "source": "/mydramalist",
+      "destination": "https://mydramalist.com/dramalist/im_piyush",
+      "permanent": false
+    },
+    {
+      "source": "/(gh|github|git)(.*)",
+      "destination": "https://github.com/officialpiyush/$2",
+      "statusCode": 302
+    }
+  ]
 }
