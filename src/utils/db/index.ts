@@ -1,6 +1,6 @@
 import db from "./connection";
 import { links, LinksSchema } from "./schema";
-import { and, eq } from "drizzle-orm/expressions";
+import { and, eq } from "drizzle-orm";
 
 export async function getLink(key: string) {
   const databaseQueryLinks = await db

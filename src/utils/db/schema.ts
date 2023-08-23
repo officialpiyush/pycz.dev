@@ -2,13 +2,13 @@ import type { InferModel } from "drizzle-orm";
 import {
   boolean,
   mysqlEnum,
+  mysqlTable,
   serial,
   text,
   timestamp,
-  varchar,
-} from "drizzle-orm/mysql-core/columns";
-import { uniqueIndex } from "drizzle-orm/mysql-core/indexes";
-import { mysqlTable } from "drizzle-orm/mysql-core/table";
+  uniqueIndex,
+  varchar
+} from "drizzle-orm/mysql-core";
 
 export const links = mysqlTable(
   "links",
