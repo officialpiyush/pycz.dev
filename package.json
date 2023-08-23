@@ -18,7 +18,7 @@
     "@trpc/client": "^10.37.1",
     "@trpc/server": "^10.37.1",
     "astro": "^2.10.12",
-    "drizzle-orm": "^0.23.13",
+    "drizzle-orm": "^0.28.0",
     "mysql2": "^3.6.0",
     "nanoid": "^4.0.2",
     "preact": "^10.17.1",
