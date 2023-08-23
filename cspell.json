@@ -1,8 +1,14 @@
 {
+    "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-types/cspell.schema.json",
     "version": "0.2",
-    "ignorePaths": [],
+    "ignorePaths": [
+        "./src/utils/db/migrations/**/*"
+    ],
     "dictionaryDefinitions": [],
-    "dictionaries": [],
+    "dictionaries": [
+        "html",
+        "typescript"
+    ],
     "words": [
         "anilist",
         "astro",
@@ -12,7 +18,12 @@
         "mydramalist",
         "officialpiyush",
         "pixelarticons",
+        "planetscale",
         "preact",
+        "Piyush",
+        "ackee",
+        "downasaur",
+        "twemoji",
         "pycz",
         "trpc",
         "unocss",

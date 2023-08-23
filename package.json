@@ -12,23 +12,23 @@
     "db:generate": "drizzle-kit generate:mysql"
   },
   "dependencies": {
-    "@astrojs/preact": "^2.2.1",
-    "@astrojs/vercel": "^3.7.4",
-    "@planetscale/database": "^1.10.0",
-    "@trpc/client": "^10.35.0",
-    "@trpc/server": "^10.35.0",
-    "astro": "^2.9.3",
+    "@astrojs/preact": "^2.2.2",
+    "@astrojs/vercel": "^3.8.2",
+    "@planetscale/database": "^1.11.0",
+    "@trpc/client": "^10.37.1",
+    "@trpc/server": "^10.37.1",
+    "astro": "^2.10.12",
     "drizzle-orm": "^0.23.13",
-    "mysql2": "^3.5.2",
+    "mysql2": "^3.6.0",
     "nanoid": "^4.0.2",
-    "preact": "^10.16.0",
-    "zod": "^3.21.4"
+    "preact": "^10.17.1",
+    "zod": "^3.22.2"
   },
   "devDependencies": {
     "@lagon/astro": "^0.2.3",
-    "@types/node": "^18.17.1",
+    "@types/node": "^18.17.8",
     "@unocss/reset": "^0.53.6",
-    "drizzle-kit": "^0.19.11",
+    "drizzle-kit": "^0.19.13",
     "unocss": "^0.53.6"
   }
 }

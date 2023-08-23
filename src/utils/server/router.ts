@@ -5,8 +5,8 @@ import type { Context } from "./context";
 
 export const t = initTRPC.context<Context>().create();
 
-const isAuthed = t.middleware(({ ctx, next }) => {
-  if (!ctx.isAuthed) {
+const isAuthenticated = t.middleware(({ ctx, next }) => {
+  if (!ctx.isAuthenticated) {
     throw new TRPCError({
       code: "UNAUTHORIZED",
       message: "Missing x-dashboard-key header",
@@ -16,7 +16,7 @@ const isAuthed = t.middleware(({ ctx, next }) => {
   return next();
 });
 
-export const protectedRouter = t.procedure.use(isAuthed);
+export const protectedRouter = t.procedure.use(isAuthenticated);
 
 export const appRouter = t.router({
   getLinkByKey: t.procedure.input(z.string()).query(({ input }) => {
