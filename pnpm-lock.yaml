@@ -41,8 +41,8 @@ dependencies:
 
 devDependencies:
   '@lagon/astro':
-    specifier: ^0.2.3
-    version: 0.2.3
+    specifier: ^0.3.0
+    version: 0.3.0
   '@types/node':
     specifier: ^18.17.8
     version: 18.17.8
@@ -1049,8 +1049,8 @@ packages:
       '@jridgewell/resolve-uri': 3.1.0
       '@jridgewell/sourcemap-codec': 1.4.14
 
-  /@lagon/astro@0.2.3:
-    resolution: {integrity: sha512-HN3Vl2rozhEGKW2nf4Ni9EGBSOHTa1CYmC8k0SpNJS6bNZGyQa2sOAm0FqzVMjv8ai/zF5+2ywSF2acDgYoPEQ==}
+  /@lagon/astro@0.3.0:
+    resolution: {integrity: sha512-72tbd7MgPElVe0zrii2KE5lTPT+9WBlQmx8911H2NzAJB452jZdkbIS/IY7Yu98tuw5pj/NHuqU9NvTUmfz7xg==}
     dev: true
 
   /@mapbox/node-pre-gyp@1.0.11:
