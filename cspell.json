@@ -26,6 +26,7 @@
         "preact",
         "pycz",
         "trpc",
+        "turso",
         "twemoji",
         "unocss",
         "unplugin"
