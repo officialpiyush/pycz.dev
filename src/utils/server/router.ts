@@ -1,5 +1,6 @@
 import { initTRPC, TRPCError } from "@trpc/server";
 import { z } from "zod";
+import { nanoid } from "nanoid";
 import { createLink } from "../db";
 import type { Context } from "./context";
 
@@ -31,7 +32,9 @@ export const appRouter = t.router({
       })
     )
     .mutation(async ({ input }) => {
+      const id = nanoid()
       const generatedLink = await createLink({
+        id,
         key: input.key,
         url: input.link,
         description: input.description || null,
@@ -46,7 +49,7 @@ export const appRouter = t.router({
         });
       }
 
-      return generatedLink.insertId;
+      return id;
     }),
 });
 

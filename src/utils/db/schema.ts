@@ -1,29 +1,30 @@
-import type { InferModel } from "drizzle-orm";
+import { sql, type InferModel } from "drizzle-orm";
 import {
-  boolean,
-  mysqlEnum,
-  mysqlTable,
-  serial,
+  integer,
+  sqliteTable,
   text,
-  timestamp,
   uniqueIndex,
-  varchar
-} from "drizzle-orm/mysql-core";
+} from "drizzle-orm/sqlite-core";
 
-export const links = mysqlTable(
+export const links = sqliteTable(
   "links",
   {
-    id: serial("id").primaryKey(),
-    key: varchar("key", { length: 200 }).notNull(),
-    parent: mysqlEnum("parent", ["none", "link"]).default("none").notNull(),
+    id: text("id").primaryKey(),
+    key: text("key", { length: 200 }).notNull(),
+    parent: text("parent").default("none").notNull(),
     description: text("description"),
     url: text("url").notNull(),
-    createdAt: timestamp("created_at").defaultNow(),
-    enabled: boolean("enabled").default(true).notNull(),
+    enabled: integer("enabled", { mode: "boolean" }).default(true),
+    createdAt: integer("created_at", { mode: "timestamp" }).default(
+      sql`(strftime('%s', 'now'))`
+    ),
+    updatedAt: integer("updated_at", { mode: "timestamp" }).default(
+      sql`(strftime('%s', 'now'))`
+    ),
   },
   (links) => ({
     keyIndex: uniqueIndex("key_idx").on(links.key),
   })
 );
 
-export type LinksSchema = InferModel<typeof links>;
+export type LinksSchema = typeof links.$inferInsert;

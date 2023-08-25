@@ -15,7 +15,7 @@ export async function getLink(key: string) {
   return databaseQueryLinks[0].url;
 }
 
-export type CreateLinkParams = Omit<LinksSchema, "id" | "createdAt">;
+export type CreateLinkParams = Omit<LinksSchema, "createdAt" | "updatedAt">;
 
 export async function createLink(data: CreateLinkParams) {
   try {

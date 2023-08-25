@@ -1,1 +1,0 @@
-ALTER TABLE links MODIFY COLUMN `created_at` timestamp DEFAULT (now());
