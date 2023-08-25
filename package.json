@@ -9,7 +9,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "db:generate": "drizzle-kit generate:sqlite"
+    "db:generate": "drizzle-kit push:sqlite"
   },
   "dependencies": {
     "@astrojs/preact": "^2.2.2",
