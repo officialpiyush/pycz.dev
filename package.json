@@ -12,7 +12,7 @@
     "db:generate": "drizzle-kit push:sqlite"
   },
   "dependencies": {
-    "@astrojs/preact": "^2.2.2",
+    "@astrojs/preact": "^3.0.0",
     "@astrojs/vercel": "^3.8.2",
     "@libsql/client": "^0.3.1",
     "@trpc/client": "^10.38.0",
