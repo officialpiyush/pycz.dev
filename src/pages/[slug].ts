@@ -8,5 +8,5 @@ export const get: APIRoute = async ({ params, redirect }) => {
     return redirect("/", 307);
   }
 
-  return redirect(link, 307);
+  return redirect(new URL(link).toString(), 307);
 };
