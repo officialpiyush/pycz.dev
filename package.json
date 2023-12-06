@@ -17,7 +17,7 @@
     "@libsql/client": "^0.3.1",
     "@trpc/client": "^10.38.0",
     "@trpc/server": "^10.38.0",
-    "astro": "^2.10.14",
+    "astro": "^4.0.0",
     "drizzle-orm": "^0.28.5",
     "drizzle-zod": "^0.5.1",
     "nanoid": "^4.0.2",
