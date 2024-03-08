@@ -24,11 +24,11 @@ dependencies:
     specifier: ^2.10.14
     version: 2.10.14(@types/node@20.5.6)
   drizzle-orm:
-    specifier: ^0.28.5
-    version: 0.28.5(@libsql/client@0.3.1)
+    specifier: ^0.30.0
+    version: 0.30.1(@libsql/client@0.3.1)(react@18.2.0)
   drizzle-zod:
     specifier: ^0.5.1
-    version: 0.5.1(drizzle-orm@0.28.5)(zod@3.22.2)
+    version: 0.5.1(drizzle-orm@0.30.1)(zod@3.22.2)
   nanoid:
     specifier: ^4.0.2
     version: 4.0.2
@@ -1993,26 +1993,30 @@ packages:
       - supports-color
     dev: true
 
-  /drizzle-orm@0.28.5(@libsql/client@0.3.1):
-    resolution: {integrity: sha512-6r6Iw4c38NAmW6TiKH3TUpGUQ1YdlEoLJOQptn8XPx3Z63+vFNKfAiANqrIiYZiMjKR9+NYAL219nFrmo1duXA==}
+  /drizzle-orm@0.30.1(@libsql/client@0.3.1)(react@18.2.0):
+    resolution: {integrity: sha512-5P6CXl4XyWtDDiYOX/jYOJp1HTUmBlXRAwaq+muUOgaSykMEy5sJesCxceMT0oCGvxeWkKfSXo5owLnfKwCIdw==}
     peerDependencies:
       '@aws-sdk/client-rds-data': '>=3'
       '@cloudflare/workers-types': '>=3'
       '@libsql/client': '*'
       '@neondatabase/serverless': '>=0.1'
+      '@op-engineering/op-sqlite': '>=2'
       '@opentelemetry/api': ^1.4.1
       '@planetscale/database': '>=1'
       '@types/better-sqlite3': '*'
       '@types/pg': '*'
+      '@types/react': '>=18'
       '@types/sql.js': '*'
       '@vercel/postgres': '*'
       better-sqlite3: '>=7'
       bun-types: '*'
+      expo-sqlite: '>=13.2.0'
       knex: '*'
       kysely: '*'
       mysql2: '>=2'
       pg: '>=8'
       postgres: '>=3'
+      react: '>=18'
       sql.js: '>=1'
       sqlite3: '>=5'
     peerDependenciesMeta:
@@ -2024,6 +2028,8 @@ packages:
         optional: true
       '@neondatabase/serverless':
         optional: true
+      '@op-engineering/op-sqlite':
+        optional: true
       '@opentelemetry/api':
         optional: true
       '@planetscale/database':
@@ -2032,6 +2038,8 @@ packages:
         optional: true
       '@types/pg':
         optional: true
+      '@types/react':
+        optional: true
       '@types/sql.js':
         optional: true
       '@vercel/postgres':
@@ -2039,6 +2047,8 @@ packages:
       better-sqlite3:
         optional: true
       bun-types:
+        optional: true
+      expo-sqlite:
         optional: true
       knex:
         optional: true
@@ -2050,21 +2060,24 @@ packages:
         optional: true
       postgres:
         optional: true
+      react:
+        optional: true
       sql.js:
         optional: true
       sqlite3:
         optional: true
     dependencies:
       '@libsql/client': 0.3.1
+      react: 18.2.0
     dev: false
 
-  /drizzle-zod@0.5.1(drizzle-orm@0.28.5)(zod@3.22.2):
+  /drizzle-zod@0.5.1(drizzle-orm@0.30.1)(zod@3.22.2):
     resolution: {integrity: sha512-C/8bvzUH/zSnVfwdSibOgFjLhtDtbKYmkbPbUCq46QZyZCH6kODIMSOgZ8R7rVjoI+tCj3k06MRJMDqsIeoS4A==}
     peerDependencies:
       drizzle-orm: '>=0.23.13'
       zod: '*'
     dependencies:
-      drizzle-orm: 0.28.5(@libsql/client@0.3.1)
+      drizzle-orm: 0.30.1(@libsql/client@0.3.1)(react@18.2.0)
       zod: 3.22.2
     dev: false
 
