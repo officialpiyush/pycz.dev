@@ -17,7 +17,7 @@
   "dependencies": {
     "@astrojs/preact": "^6.0.1",
     "@astrojs/vercel": "^11.0.3",
-    "@libsql/client": "^0.17.4",
+    "@libsql/client": "^0.18.0",
     "@trpc/client": "^11.18.0",
     "@trpc/server": "^11.18.0",
     "astro": "^7.1.3",
